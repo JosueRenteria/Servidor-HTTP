@@ -1,0 +1,37 @@
+para hacer un repositorio
+git init
+
+para ver el estatus
+git status
+
+para versionarlo
+git add . 
+
+para ya particionarlo
+git commit -m "el mensaje"
+
+para ver los commits
+git log
+
+para ver lo que hay dentro de los commits
+git show --name-only
+
+//Para hacer el guardado en GitHub
+
+Agregar un repositorio remoto
+git remote add origin
+
+Es la url para el github
+https://github.com/JosueRenteria/Sistema-Web-para-la-Gestion-de-la-Clinica-Veterina-MetLiferia-.git
+
+https://github.com/JosueRenteria/Sistema-Web-para-la-Gestion-de-la-Clinica-Veterina-MetLiferia-
+
+Subir el repositorio local al github
+git push origin master
+
+Crear un README
+podemos dejarlo vacio
+
+Para subir cambios
+git push <URL>
+

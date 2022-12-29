@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;" />
+    <title>Servidor Web</title>
+
+    <style>
+
+        h1{
+            margin-right: 50%;
+        }
+
+        input{
+            margin: 7px;
+            padding: 2px
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+            }
+            .one {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            }
+            .two {
+            grid-column: 2 / 4;
+            grid-row: 1 / 2;
+            }
+
+            body{
+                background-color: #E6EED6;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            h1, h2{
+                color: #F95738;
+            }
+
+    </style>
+
+</head>
+
+<body>
+    <form action="get" method="GET" name="formGET">
+        <div class="wrapper">
+            <div class="two">
+                <h1>SERVIDOR HTTP</h1>
+                <h2><a href="resources.html">Recursos disponibles</a></h2>
+                <h2>Formulario GET</h2>
+                Nombre:     &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Nombre"><br> 
+                Direccion:  &nbsp;&nbsp;<input type="text" name="Direccion"><br> 
+                Telefono:   &nbsp;&nbsp;&nbsp;<input type="text" name="Telefono"><br> 
+                Comentarios: <br>
+                <textarea name="Comentarios" rows="7" cols="40"></textarea> <br>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar datos">
+            </div>
+        </div>
+    </form>
+
+    <form action="post" method="POST" name="formPost">
+        <div class="wrapper">
+            <div class="two">
+                <h2>Formulario POST</h2>
+                Nombre:     &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Nombre"><br> 
+                Direccion:  &nbsp;&nbsp;<input type="text" name="Direccion"><br> 
+                Telefono:   &nbsp;&nbsp;&nbsp;<input type="text" name="Telefono"><br> 
+                Comentarios: <br>
+                <textarea name="Comentarios" rows="7" cols="40"></textarea> <br>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar datos">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
